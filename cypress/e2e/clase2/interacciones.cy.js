@@ -9,8 +9,7 @@ describe('Interacciones UI',  () => {
   cy.get('[data-cy="password-input"]').type(shortPassword)
   cy.get('[data-cy="submit-button"]').click()
   cy.get('[data-cy="password-error"]').contains('Password must be at least 6 characters')
-  const passA = '123456';
-  const passB = '123457';
+
   cy.get('[data-cy="password-input"]').clear().type(passA)
   cy.get('[data-cy="confirm-password-input"]').type(passB)
   cy.get('[data-cy="submit-button"]').click()
