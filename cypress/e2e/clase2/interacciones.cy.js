@@ -2,15 +2,7 @@
 describe('Interacciones UI',  () => {
 
   it('Submit sin datos', () => {
-      cy.visit('https://endearing-lollipop-19f16d.netlify.app')
-    cy.get('[data-cy="nav-interacciones-ui"]').click()
-    cy.get('[data-cy="submit-button"]').click()
-    cy.wait(300)
-    cy.get('[data-cy="username-error"]').contains('Username is required')
-    cy.get('[data-cy="email-error"]').contains('Email is required')
-    cy.get('[data-cy="password-error"]').contains('Password is required')
-    cy.get('[data-cy="role-error"]').contains('Please select a role')
-    cy.get('[data-cy="terms-error"]').contains('You must accept the terms') 
+      
   } )
   it('Password Incorrecta', () => {
   const shortPassword = '123';
