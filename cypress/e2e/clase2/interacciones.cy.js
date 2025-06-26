@@ -5,7 +5,7 @@ describe('Interacciones UI',  () => {
       
   } )
   it('Password Incorrecta', () => {
-  const shortPassword = '12';
+  const shortPassword = '123';
   cy.get('[data-cy="password-input"]').type(shortPassword)
   cy.get('[data-cy="submit-button"]').click()
   cy.get('[data-cy="password-error"]').contains('Password must be at least 6 characters')
